@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/title_linear"
+            android:layout_width="match_parent"
+            android:layout_height="120.0dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20.0dip"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_title"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="100dp"
+                android:src="@drawable/local" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5.0dip"
+                android:layout_toRightOf="@+id/iv_title"
+                android:text="@string/name_app"
+                android:textColor="@android:color/white"
+                android:textSize="34.0sp"
+                tools:ignore="RelativeOverlap" />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_line"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="110dp"
+            android:src="@drawable/line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:id="@+id/iv_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/prompt_local" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/app_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_above="@id/iv_line"
+            android:layout_below="@id/title_linear"
+            android:orientation="vertical"
+            android:layout_marginStart="100.0dp"
+            android:layout_marginEnd="100.0dp">
+
+            <GridView
+                android:visibility="gone"
+                android:id="@+id/grid_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fadingEdge="none"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="6"
+                android:scrollbarThumbVertical="@drawable/app_list_image"
+                android:layout_gravity="center_horizontal"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

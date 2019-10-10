@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/g1pro-master-b9f1c721985c2606a80093eee132a6df040db0a3g1pro.git.iml" filepath="$PROJECT_DIR$/g1pro-master-b9f1c721985c2606a80093eee132a6df040db0a3g1pro.git.iml" />
+    </modules>
+  </component>
+</project>

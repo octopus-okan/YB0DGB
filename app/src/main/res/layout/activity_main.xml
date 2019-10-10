@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/main_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:id="@+id/iv_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/galaxyg"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/top_info"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="80.0dip"
+                android:layout_marginBottom="20dp"
+                android:text="jinnis"
+                android:textColor="#fff"
+                android:textSize="25dip"
+                tools:ignore="RelativeOverlap" />
+
+            <TextView
+                android:id="@+id/time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="20.0dip"
+                android:layout_marginBottom="20dp"
+                android:layout_toLeftOf="@id/tv_date"
+                android:text="17:36"
+                android:textColor="#fff"
+                android:textSize="30.0dip"
+
+                tools:ignore="RelativeOverlap" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/top_info"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true">
+
+            <FrameLayout
+                android:id="@+id/fl1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dip"
+                android:clickable="true"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/bg_iv1"
+                    android:layout_width="330.0dip"
+                    android:layout_height="370dip"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:layout_width="330dp"
+                    android:layout_height="370dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_galaxyg" />
+
+                <TextView
+                    android:id="@+id/title_tv1"
+                    style="@style/APP_BOTTOM_TEXT_STYLE"
+                    android:text="Galaxy G" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fl6"
+                android:layout_marginLeft="40dip"
+                android:layout_toEndOf="@id/fl1"
+                android:clickable="true"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/bg_iv2"
+                    android:layout_width="180dip"
+                    android:layout_height="180dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_app" />
+
+                <TextView
+                    android:id="@+id/title_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="170.0dip"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="@string/app_store"
+                    android:textColor="@android:color/white"
+                    android:textSize="35.0dip"
+                    android:visibility="gone"
+                    tools:ignore="RelativeOverlap" />
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/fl3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fl6"
+                android:layout_marginLeft="10dip"
+                android:layout_toEndOf="@id/fl2"
+                android:clickable="true"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/bg_iv3"
+                    android:layout_width="180dip"
+                    android:layout_height="180dip" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_popcorn_time" />
+
+                <TextView
+                    android:id="@+id/title_tv3"
+                    style="@style/APP_BOTTOM_TEXT_STYLE"
+                    android:layout_width="180dp"
+                    android:text="Popcorn Time" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_toEndOf="@id/fl3"
+                android:clickable="true"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/bg_iv4"
+                    android:layout_width="180dip"
+                    android:layout_height="180dip"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_freetrial_logo" />
+
+                <TextView
+                    style="@style/APP_BOTTOM_TEXT_STYLE"
+                    android:layout_width="180dp"
+                    android:text="My Family Cinema" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_toEndOf="@id/fl4"
+                android:clickable="true"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/bg_iv5"
+                    android:layout_width="180dip"
+                    android:layout_height="180dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_setting" />
+
+                <TextView
+                    android:id="@+id/title_tv5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="170.0dip"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="@string/app_store"
+                    android:textColor="@android:color/white"
+                    android:textSize="35.0dip"
+                    android:visibility="gone"
+                    tools:ignore="RelativeOverlap" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dip"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@id/fl1"
+                android:clickable="true"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/bg_iv6"
+                    android:layout_width="370dip"
+                    android:layout_height="180dip"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:layout_width="370dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_googleplay" />
+
+                <TextView
+                    android:id="@+id/title_tv6"
+                    style="@style/APP_BOTTOM_TEXT_STYLE"
+                    android:layout_width="370dp"
+                    android:text="Google Play" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fl4"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/fl6"
+                android:clickable="true"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/bg_iv7"
+                    android:layout_width="180dip"
+                    android:layout_height="180dip"
+                    android:scaleType="fitXY"
+                  />
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_youtube" />
+
+                <TextView
+                    style="@style/APP_BOTTOM_TEXT_STYLE"
+                    android:layout_width="180dp"
+                    android:text="YouTube" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fl5"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/fl7"
+                android:clickable="true"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/bg_iv8"
+                    android:layout_width="180dip"
+                    android:layout_height="180dip"
+                    android:scaleType="fitXY"
+                    />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_netflix" />
+
+                <TextView
+                    style="@style/APP_BOTTOM_TEXT_STYLE"
+                    android:layout_width="180dp"
+                    android:text="Netflix" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_add1"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_below="@id/fl1"
+                android:layout_marginLeft="80dip"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/item_child_6"
+                android:clickable="true"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <ImageView
+                    android:id="@+id/bg_add1"
+                    android:layout_width="75dip"
+                    android:layout_height="75dip"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/item_img_add" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_add2"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_below="@id/fl1"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="25dp"
+                android:layout_toEndOf="@id/fl_add1"
+                android:background="@drawable/item_child_6"
+                android:clickable="true"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <ImageView
+                    android:id="@+id/bg_add2"
+                    android:layout_width="75dip"
+                    android:layout_height="75dip"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/item_img_add" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_add3"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_below="@id/fl1"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="25dp"
+                android:layout_toEndOf="@id/fl_add2"
+                android:background="@drawable/item_child_6"
+                android:clickable="true"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/bg_add3"
+                    android:layout_width="75dip"
+                    android:layout_height="75dip"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/item_img_add" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_add4"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_below="@id/fl1"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="25dp"
+                android:layout_toEndOf="@id/fl_add3"
+                android:background="@drawable/item_child_6"
+                android:clickable="true"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/bg_add4"
+                    android:layout_width="75dip"
+                    android:layout_height="75dip"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/item_img_add" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_add5"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_below="@id/fl1"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="25dp"
+                android:layout_toEndOf="@id/fl_add4"
+                android:background="@drawable/item_child_6"
+                android:clickable="true"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/bg_add5"
+                    android:layout_width="75dip"
+                    android:layout_height="75dip"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/item_img_add" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_add6"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_below="@id/fl1"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="25dp"
+                android:layout_toEndOf="@id/fl_add5"
+                android:background="@drawable/item_child_6"
+                android:clickable="true"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/bg_add6"
+                    android:layout_width="75dip"
+                    android:layout_height="75dip"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/item_img_add" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_add7"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_below="@id/fl1"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="25dp"
+                android:layout_toEndOf="@id/fl_add6"
+                android:background="@drawable/item_child_6"
+                android:clickable="true"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/bg_add7"
+                    android:layout_width="75dip"
+                    android:layout_height="75dip"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/item_img_add" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_add8"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_below="@id/fl1"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="25dp"
+                android:layout_toEndOf="@id/fl_add7"
+                android:background="@drawable/item_child_6"
+                android:clickable="true"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/bg_add8"
+                    android:layout_width="75dip"
+                    android:layout_height="75dip"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/item_img_add" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_add9"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_below="@id/fl1"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="25dp"
+                android:layout_toEndOf="@id/fl_add8"
+                android:background="@drawable/item_child_6"
+                android:clickable="true"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/bg_add9"
+                    android:layout_width="75dip"
+                    android:layout_height="75dip"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/item_img_add" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_add10"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_below="@id/fl1"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="25dp"
+                android:layout_toEndOf="@id/fl_add9"
+                android:background="@drawable/item_child_6"
+                android:clickable="true"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/bg_add10"
+                    android:layout_width="75dip"
+                    android:layout_height="75dip"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/item_img_add" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_add11"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_below="@id/fl1"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="25dp"
+                android:layout_toEndOf="@id/fl_add10"
+                android:background="@drawable/item_child_6"
+                android:clickable="true"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/bg_add11"
+                    android:layout_width="75dip"
+                    android:layout_height="75dip"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/item_img_add" />
+
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/fl_add12"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_below="@id/fl1"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="25dp"
+                android:layout_toEndOf="@id/fl_add11"
+                android:background="@drawable/item_child_6"
+                android:clickable="true"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/bg_add12"
+                    android:layout_width="75dip"
+                    android:layout_height="75dip"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/item_img_add" />
+
+            </FrameLayout>
+        </RelativeLayout>
+
+        <com.globalhome.views.MainUpView
+            android:id="@+id/mainUpView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</layout>

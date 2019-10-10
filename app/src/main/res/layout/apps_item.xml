@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/root"
+    android:orientation="horizontal"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/app_linear"
+        android:layout_width="198.0dip"
+        android:layout_height="198.0dip"
+        android:background="@drawable/app_gridview_background">
+
+        <ImageView
+            android:id="@+id/app_icon"
+            android:layout_width="100.0dip"
+            android:layout_height="100.0dip"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/app_title"
+            android:layout_width="wrap_content"
+            android:layout_height="38.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5.0dip"
+            android:ellipsize="marquee"
+            android:paddingLeft="25.0dip"
+            android:paddingRight="25.0dip"
+            android:scaleType="center"
+            android:singleLine="true"
+            android:textColor="#ffeee9e9"
+            android:textSize="22.0dip"
+            tools:ignore="RelativeOverlap" />
+    </RelativeLayout>
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/app_add"-->
+        <!--android:layout_width="198.0dip"-->
+        <!--android:layout_height="198.0dip"-->
+        <!--android:background="@drawable/item_child_6">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/app_icon_add"-->
+            <!--android:layout_width="100.0dip"-->
+            <!--android:layout_height="100.0dip"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:src="@drawable/item_img_add"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/app_title_add"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="38.0dip"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginBottom="5.0dip"-->
+            <!--android:ellipsize="marquee"-->
+            <!--android:paddingLeft="25.0dip"-->
+            <!--android:paddingRight="25.0dip"-->
+            <!--android:scaleType="center"-->
+            <!--android:singleLine="true"-->
+            <!--android:textColor="#ffeee9e9"-->
+            <!--android:textSize="22.0dip"-->
+            <!--tools:ignore="RelativeOverlap"-->
+            <!--android:text="请添加"/>-->
+    <!--</RelativeLayout>-->
+</LinearLayout>
