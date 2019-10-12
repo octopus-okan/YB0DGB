@@ -108,6 +108,9 @@ import okhttp3.Request;
 import okhttp3.Response;
 import okhttp3.ResponseBody;
 
+import static android.view.KeyEvent.KEYCODE_F1;
+import static android.view.KeyEvent.KEYCODE_F2;
+import static android.view.KeyEvent.KEYCODE_F3;
 import static com.globalhome.utils.PageType.FAVORITE_TYPE;
 import static com.globalhome.utils.PageType.HOME_BOTTOM_TYPE;
 import static com.globalhome.utils.PageType.HOME_TYPE;
@@ -377,7 +380,7 @@ public class MainActivity extends AppCompatActivity implements View.OnFocusChang
         timeHandler.release();
         netTool.release();
         appHandler.release();
-//        wallperHandler.release();
+        //wallperHandler.release();
         timeHandler.setOnTimeDateListener(null);
         netTool.setOnNetListener(null);
         appHandler.setAddRemoeveListener(null);
@@ -831,12 +834,13 @@ public class MainActivity extends AppCompatActivity implements View.OnFocusChang
 //                Apps2Activity.launch(this, MY_APP_TYPE);
                 break;
             case R.id.fl5:
-                launchApp("com.android.settings");
+                launchApp("com.android.tv.settings");
                 break;
             case R.id.fl6:
-                launchApp("com.android.vending");//googleplay
+                //launchApp("com.android.vending");//googleplay
 //                launchApp("org.xbmc.kodi");
 //                launchApp("com.softwinner.TvdFileManager");
+                launchApp("com.android.chrome");
                 break;
             case R.id.fl7:
                 launchApp("com.google.android.youtube.tv");
@@ -911,7 +915,17 @@ public class MainActivity extends AppCompatActivity implements View.OnFocusChang
                 //todo 底部弹窗
 //                handleViewKeyDown(v);
                 break;
+            case KEYCODE_F2 :
+                launchApp("org.xbmc.kodi");
+                break;
+            case KeyEvent.KEYCODE_SETTINGS :
+                launchApp("com.android.tv.settings");
+                break;
+            case KEYCODE_F1 :
+                Apps2Activity.launch(this, MY_APP_TYPE);
+                break;
         }
+
         if (BuildConfig.DEBUG && keyCode == KeyEvent.KEYCODE_VOLUME_DOWN) {
             handleViewKey(v, keyCode, false);
         }
@@ -972,13 +986,13 @@ public class MainActivity extends AppCompatActivity implements View.OnFocusChang
                 case KeyEvent.KEYCODE_9:// 9
                     inputNumber("9");
                     break;
-                case KeyEvent.KEYCODE_F1: //F1
+                case KEYCODE_F1: //F1
                     inputNumber("F1");
                     break;
-                case KeyEvent.KEYCODE_F2:    //F2
+                case KEYCODE_F2:    //F2
                     inputNumber("F2");
                     break;
-                case KeyEvent.KEYCODE_F3:     //F3
+                case KEYCODE_F3:     //F3
                     inputNumber("F3");
                     break;
             }
