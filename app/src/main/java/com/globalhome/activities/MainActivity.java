@@ -54,6 +54,9 @@ import com.globalhome.data.json.regoem.RemoveAppBean;
 import com.globalhome.data.json.regoem.VersionBean;
 import com.globalhome.data.marquee.Marquee;
 import com.globalhome.data.marquee.Root;
+import com.globalhome.listener.BaseListener;
+import com.globalhome.receiver.MediaCardStateReceiver;
+import com.globalhome.receiver.UsbStateReceiver;
 import com.globalhome.utils.AppHandler;
 import com.globalhome.utils.AppMain;
 import com.globalhome.utils.AppManager;
@@ -196,6 +199,8 @@ public class MainActivity extends AppCompatActivity implements View.OnFocusChang
 
     private String removeResult;
     private HomeCustomAppAdapter homeCustomAppAdapter;
+    private UsbStateReceiver usbStateReceiver;
+    private MediaCardStateReceiver mediaCardStateReceiver;
 
 
     @Override
@@ -308,6 +313,21 @@ public class MainActivity extends AppCompatActivity implements View.OnFocusChang
 
         String mac = Utils.getDevID().toUpperCase();
         NetTool.setMac(mac);
+
+        usbStateReceiver = new UsbStateReceiver(mContext);
+        usbStateReceiver.setOnUpdateListener(new BaseListener.OnBoolUpdateListener() {
+            @Override
+            public void onUpdate(boolean result) {
+                binding.ivUsb.setVisibility(result?View.VISIBLE:View.GONE);
+            }
+        });
+        mediaCardStateReceiver = new MediaCardStateReceiver(mContext);
+        mediaCardStateReceiver.setOnUpdateListener(new BaseListener.OnBoolUpdateListener() {
+            @Override
+            public void onUpdate(boolean result) {
+                binding.ivTf.setVisibility(result?View.VISIBLE:View.GONE);
+            }
+        });
     }
 
     @Override
@@ -335,15 +355,18 @@ public class MainActivity extends AppCompatActivity implements View.OnFocusChang
     }
 
     @Override
-    protected void onPause() {
-        super.onPause();
-        Log.d(TAG, "onPause");
+    protected void onResume() {
+        super.onResume();
+        usbStateReceiver.onRegister();
+        mediaCardStateReceiver.onRegister();
     }
 
     @Override
-    protected void onResume() {
-        super.onResume();
-
+    protected void onPause() {
+        super.onPause();
+        Log.d(TAG, "onPause");
+        usbStateReceiver.onUnregister();
+        mediaCardStateReceiver.onUnregister();
     }
 
     @Override
@@ -558,57 +581,42 @@ public class MainActivity extends AppCompatActivity implements View.OnFocusChang
     @Override
     public void onNetState(boolean isConnected, int type) {
         boolean b = NetTool.isNetworkOK();
-//        if (b) {
-//            String n = getEthernetMacAddress();
-//            String w = getWiFiMacAddress(mContext);
-//            if (!"".equals(n) && null != n) {
-//                netMac = n;
-//            } else if (!"".equals(w) && null != w) {
-//                netMac = w;
-//            }
-//            new Thread() {
-//                @Override
-//                public void run() {
-//                    super.run();
-//                    GetNetIp();
-//                }
-//            }.start();
-////
-//            if (!binding.netIv.isShown()) {
-//                binding.netIv.setVisibility(View.VISIBLE);
-//            }
-//            switch (type) {
-//                case 1: // WIFI
-//                    binding.netIv.setImageResource(R.drawable.wifi5);
-//                    break;
-//                default: // 2 -> ETH
-//                    binding.netIv.setImageResource(R.drawable.img_status_ethernet);
-//                    break;
-//            }
-//        } else {
-//            binding.netIv.setVisibility(View.INVISIBLE);
-//        }
+        if (b) {
+            if (!binding.netIv.isShown()) {
+                binding.netIv.setVisibility(View.VISIBLE);
+            }
+            switch (type) {
+                case 1: // WIFI
+                    binding.netIv.setImageResource(R.drawable.wifi5);
+                    break;
+                default: // 2 -> ETH
+                    binding.netIv.setImageResource(R.drawable.img_status_ethernet);
+                    break;
+            }
+        } else {
+            binding.netIv.setVisibility(View.INVISIBLE);
+        }
     }
 
     @Override
     public void wifiLevel(int level) {
-//        switch (level) {
-//            case 0:
-//                binding.netIv.setImageResource(R.drawable.wifi1);
-//                break;
-//            case 1:
-//                binding.netIv.setImageResource(R.drawable.wifi2);
-//                break;
-//            case 2:
-//                binding.netIv.setImageResource(R.drawable.wifi3);
-//                break;
-//            case 3:
-//                binding.netIv.setImageResource(R.drawable.wifi4);
-//                break;
-//            case 4:
-//                binding.netIv.setImageResource(R.drawable.wifi5);
-//                break;
-//        }
+        switch (level) {
+            case 0:
+                binding.netIv.setImageResource(R.drawable.wifi1);
+                break;
+            case 1:
+                binding.netIv.setImageResource(R.drawable.wifi2);
+                break;
+            case 2:
+                binding.netIv.setImageResource(R.drawable.wifi3);
+                break;
+            case 3:
+                binding.netIv.setImageResource(R.drawable.wifi4);
+                break;
+            case 4:
+                binding.netIv.setImageResource(R.drawable.wifi5);
+                break;
+        }
     }
 
     @Override
