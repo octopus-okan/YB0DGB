@@ -108,7 +108,7 @@ public class Apps2Activity extends AppCompatActivity {
         switch (pageType) {
             case MY_APP_TYPE:
                 mBinding.ivTitle.setImageResource(R.drawable.app);
-                mBinding.tvTitle.setText("我的应用");
+                mBinding.tvTitle.setText(R.string.name_app);
                 mBinding.ivNotice.setImageResource(R.drawable.prompt_app);
                 mApp2Adapter.setData(DataUtils.getValidAppList(mContext));//todo 没有加号，菜单只有卸载
                 break;

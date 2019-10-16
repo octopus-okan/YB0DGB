@@ -625,7 +625,7 @@ public class MainActivity extends AppCompatActivity implements View.OnFocusChang
     @Override
     public void onResponse(SparseArray<App> apps) {
         if (homeAppsDialog != null) {
-            homeAppsDialog.loadAppData(apps, "我的应用");
+            homeAppsDialog.loadAppData(apps, this.getString(R.string.name_app));
         }
     }
 
@@ -926,9 +926,9 @@ public class MainActivity extends AppCompatActivity implements View.OnFocusChang
                 break;
         }
 
-        if (BuildConfig.DEBUG && keyCode == KeyEvent.KEYCODE_VOLUME_DOWN) {
-            handleViewKey(v, keyCode, false);
-        }
+        //if (BuildConfig.DEBUG && keyCode == KeyEvent.KEYCODE_VOLUME_DOWN) {
+            //handleViewKey(v, keyCode, false);
+        //}
         return false;
     }
 

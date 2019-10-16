@@ -112,14 +112,14 @@ public class AppsActivity extends AppCompatActivity{
                                 binding.titleText.setText("在线视频");
                                 binding.okImage.setImageResource(R.drawable.prompt_video);
                                 appHandler.scanVideo();
-                            }else if (binding.titleText.getText().equals("我的应用")){
+                            }else if (binding.titleText.getText().equals(R.string.name_app)){
                                 binding.titleImage.setImageResource(R.drawable.recommend);
                                 binding.titleText.setText("推荐");
                                 binding.okImage.setImageResource(R.drawable.prompt_recommend);
                                 appHandler.scanRecommend();
                             } else if (binding.titleText.getText().equals("音乐")){
                                 binding.titleImage.setImageResource(R.drawable.app);
-                                binding.titleText.setText("我的应用");
+                                binding.titleText.setText(R.string.name_app);
                                 binding.okImage.setImageResource(R.drawable.prompt_app);
                                 appHandler.scan();
                             } else if (binding.titleText.getText().equals("Favorite")){
@@ -150,10 +150,10 @@ public class AppsActivity extends AppCompatActivity{
                                 appHandler.scanRecommend();
                             } else if (binding.titleText.getText().equals("推荐")){
                                 binding.titleImage.setImageResource(R.drawable.app);
-                                binding.titleText.setText("我的应用");
+                                binding.titleText.setText(R.string.name_app);
                                 binding.okImage.setImageResource(R.drawable.prompt_app);
                                 appHandler.scan();
-                            } else if (binding.titleText.getText().equals("我的应用")){
+                            } else if (binding.titleText.getText().equals(R.string.name_app)){
                                 binding.titleImage.setImageResource(R.drawable.music);
                                 binding.titleText.setText("音乐");
                                 binding.okImage.setImageResource(R.drawable.prompt_music);
@@ -225,7 +225,7 @@ public class AppsActivity extends AppCompatActivity{
                 break;
             case MY_APP_TYPE:
                 binding.titleImage.setImageResource(R.drawable.app);
-                binding.titleText.setText("我的应用");
+                binding.titleText.setText(R.string.name_app);
                 binding.okImage.setImageResource(R.drawable.prompt_app);
                 appHandler.scan();
                 break;
