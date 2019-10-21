@@ -66,6 +66,7 @@ public class AppHandler {
     private StringBuilder sbm;
     private StringBuilder sbf;
 
+    public static final boolean isShowBottomAdds = false;
     public AppHandler(Context context, PageType type) {
         mContext = context;
         this.context = context;
@@ -610,7 +611,7 @@ public class AppHandler {
                         ((Activity) context).runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                                if (listenerOk) {
+                                if (listenerOk&&isShowBottomAdds) {
                                     addRemoeveListener.homeAppResult(DataUtils.getHomeCustomApp());
                                 }
                             }

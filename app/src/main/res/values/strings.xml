@@ -10,8 +10,8 @@
     <string name="accelerate">加速</string>
     <string name="file">文件</string>
     <string name="setting">设置</string>
-    <string name="app_name_app">Applications</string>
-    <string name="name_app">Applications</string>
+    <string name="app_name_app">My Apps</string>
+    <string name="name_app">My Apps</string>
     <string name="app_ok_string">长按OK卸载应用</string>
     <string name="del">卸载</string>
     <string name="remove">移除</string>

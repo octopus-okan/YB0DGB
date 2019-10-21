@@ -253,6 +253,9 @@ public class MainActivity extends AppCompatActivity implements View.OnFocusChang
             flItemAdd[i].setOnFocusChangeListener(this);
             flItemAdd[i].setOnClickListener(this);
             flItemAdd[i].setOnKeyListener(this);
+            if (!AppHandler.isShowBottomAdds) {
+                flItemAdd[i].setVisibility(View.GONE);
+            }
         }
 
 
@@ -321,14 +324,14 @@ public class MainActivity extends AppCompatActivity implements View.OnFocusChang
         usbStateReceiver.setOnUpdateListener(new BaseListener.OnBoolUpdateListener() {
             @Override
             public void onUpdate(boolean result) {
-                binding.ivUsb.setVisibility(result?View.VISIBLE:View.GONE);
+                binding.ivUsb.setVisibility(result ? View.VISIBLE : View.GONE);
             }
         });
         mediaCardStateReceiver = new MediaCardStateReceiver(mContext);
         mediaCardStateReceiver.setOnUpdateListener(new BaseListener.OnBoolUpdateListener() {
             @Override
             public void onUpdate(boolean result) {
-                binding.ivTf.setVisibility(result?View.VISIBLE:View.GONE);
+                binding.ivTf.setVisibility(result ? View.VISIBLE : View.GONE);
             }
         });
     }
