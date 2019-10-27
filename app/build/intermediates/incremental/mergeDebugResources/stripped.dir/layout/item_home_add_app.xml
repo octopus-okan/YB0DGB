@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="85dp"
+    android:layout_height="85dp"
+    android:layout_marginLeft="10dip"
+    android:background="@drawable/item_child_6"
+    android:clickable="true"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="75dip"
+        android:layout_height="75dip"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/item_img_add" />
+</FrameLayout>

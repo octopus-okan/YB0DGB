@@ -1,0 +1,23 @@
+# ninja log v5
+2	1883	592574901	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	5c666af6d8bbcf1c
+1888	2671	592574902	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	4f566f9e2f9433a9
+7	1660	592581103	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	5c666af6d8bbcf1c
+1660	2376	592581104	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	4f566f9e2f9433a9
+6	1633	592581225	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	5c666af6d8bbcf1c
+1634	2384	592581226	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	4f566f9e2f9433a9
+7	1639	592581466	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	5c666af6d8bbcf1c
+1640	2376	592581467	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	4f566f9e2f9433a9
+7	1725	592584901	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	5c666af6d8bbcf1c
+1726	2706	592584902	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	4f566f9e2f9433a9
+7	1947	592771512	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	5c666af6d8bbcf1c
+1947	3811	592771513	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	4f566f9e2f9433a9
+6	1556	592771664	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	5c666af6d8bbcf1c
+1557	2166	592771664	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	4f566f9e2f9433a9
+50	1772	593162518	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	5c666af6d8bbcf1c
+1772	2797	593162519	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	4f566f9e2f9433a9
+6	1588	593169350	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	5c666af6d8bbcf1c
+1588	2247	593169351	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	4f566f9e2f9433a9
+7	1659	593258905	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	5c666af6d8bbcf1c
+1660	2334	593258906	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	4f566f9e2f9433a9
+6	1614	593331711	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	5c666af6d8bbcf1c
+1615	2318	593331712	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	4f566f9e2f9433a9

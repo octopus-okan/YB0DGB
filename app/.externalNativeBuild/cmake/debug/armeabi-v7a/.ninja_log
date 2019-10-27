@@ -1,0 +1,23 @@
+# ninja log v5
+2	1882	592574904	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	373e3075f809e94e
+1887	2572	592574905	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	3617915b2ec0d01f
+8	1665	592581106	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	373e3075f809e94e
+1666	2382	592581107	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	3617915b2ec0d01f
+7	1693	592581228	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	373e3075f809e94e
+1693	2384	592581229	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	3617915b2ec0d01f
+6	1611	592581469	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	373e3075f809e94e
+1612	2350	592581470	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	3617915b2ec0d01f
+5	1317	592584903	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	373e3075f809e94e
+1318	1963	592584904	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	3617915b2ec0d01f
+6	1847	592771516	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	373e3075f809e94e
+1847	2844	592771517	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	3617915b2ec0d01f
+7	1542	592771666	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	373e3075f809e94e
+1543	2154	592771667	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	3617915b2ec0d01f
+170	2028	593162521	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	373e3075f809e94e
+2029	2994	593162522	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	3617915b2ec0d01f
+6	1516	593169352	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	373e3075f809e94e
+1517	2099	593169353	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	3617915b2ec0d01f
+8	1478	593258908	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	373e3075f809e94e
+1479	2085	593258908	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	3617915b2ec0d01f
+6	1572	593331714	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	373e3075f809e94e
+1573	2194	593331715	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	3617915b2ec0d01f

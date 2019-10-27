@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "F:\\YB0DGB\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_pull.xml",
+        "source": "F:\\YB0DGB\\app\\src\\main\\res\\layout\\activity_pull.xml"
+    },
+    {
+        "merged": "F:\\YB0DGB\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\menu_dialog.xml",
+        "source": "F:\\YB0DGB\\app\\src\\main\\res\\layout\\menu_dialog.xml"
+    },
+    {
+        "merged": "F:\\YB0DGB\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_my_application.xml",
+        "source": "F:\\YB0DGB\\app\\src\\main\\res\\layout\\activity_my_application.xml"
+    },
+    {
+        "merged": "F:\\YB0DGB\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_apps2.xml",
+        "source": "F:\\YB0DGB\\app\\src\\main\\res\\layout\\activity_apps2.xml"
+    },
+    {
+        "merged": "F:\\YB0DGB\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "F:\\YB0DGB\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "F:\\YB0DGB\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\chooseactivity_layout.xml",
+        "source": "F:\\YB0DGB\\app\\src\\main\\res\\layout\\chooseactivity_layout.xml"
+    }
+]
